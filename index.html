@@ -109,6 +109,23 @@
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
+        
+        /* Custom brand icon colors */
+        .godaddy-color {
+            color: #5B99D3;
+        }
+        
+        .namecheap-color {
+            color: #DE5729;
+        }
+        
+        .sedo-color {
+            color: #5DBF4A;
+        }
+        
+        .daaz-color {
+            color: #3B82F6;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
@@ -149,7 +166,7 @@
             <!-- Price Display -->
             <div class="inline-block bg-white/90 backdrop-blur-sm border-2 border-gray-300 px-8 sm:px-12 py-6 rounded-2xl mb-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 animate-fade-in-scale pulse-ring">
                 <div class="text-sm text-gray-500 uppercase tracking-wider mb-2 font-semibold">Available Now For</div>
-                <div class="text-4xl sm:text-5xl md:text-6xl font-black text-gradient">$970</div>
+                <div class="text-4xl sm:text-5xl md:text-6xl font-black text-gradient">$1,090</div>
             </div>
 
             <!-- Primary CTA Button -->
@@ -188,6 +205,92 @@
         <!-- Scroll Indicator -->
         <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce-slow cursor-pointer">
             <i class="fas fa-chevron-down text-xl text-gray-400 hover:text-gray-900 transition-colors duration-300"></i>
+        </div>
+    </section>
+
+    <!-- Domain Marketplace Links Section -->
+    <section class="relative py-12 bg-white border-t border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-gray-800 animate-fade-in-up">
+                Check Domain Availability
+            </h2>
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.1s;">
+                Verify this premium domain's status on popular marketplaces
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- GoDaddy Link -->
+                <a href="https://www.godaddy.com/en/domainsearch/find?domainToCheck=bostonfactory.com" 
+                   target="_blank"
+                   class="group flex flex-col items-center justify-center p-5 bg-gradient-to-br from-white to-gray-50 border border-gray-300 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-105 hover:border-red-500 animate-fade-in-up"
+                   style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full mb-4 group-hover:bg-red-100 transition-colors duration-300">
+                        <!-- GoDaddy Icon -->
+                        <svg class="w-8 h-8 godaddy-color" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/>
+                            <path d="M12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10.5c-2.485 0-4.5-2.015-4.5-4.5s2.015-4.5 4.5-4.5 4.5 2.015 4.5 4.5-2.015 4.5-4.5 4.5z"/>
+                            <circle cx="12" cy="12" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 text-center">GoDaddy</h3>
+                    <p class="text-xs text-gray-600 text-center">Check domain status</p>
+                </a>
+                
+                <!-- Namecheap Link -->
+                <a href="https://www.namecheap.com/domains/registration/results/?domain=bostonfactory.com" 
+                   target="_blank"
+                   class="group flex flex-col items-center justify-center p-5 bg-gradient-to-br from-white to-gray-50 border border-gray-300 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-105 hover:border-orange-500 animate-fade-in-up"
+                   style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-orange-50 rounded-full mb-4 group-hover:bg-orange-100 transition-colors duration-300">
+                        <!-- Namecheap Icon -->
+                        <svg class="w-8 h-8 namecheap-color" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/>
+                            <path d="M16.5 9h-9c-.828 0-1.5.672-1.5 1.5v3c0 .828.672 1.5 1.5 1.5h9c.828 0 1.5-.672 1.5-1.5v-3c0-.828-.672-1.5-1.5-1.5zm-9 1.5h9v3h-9v-3z"/>
+                            <circle cx="9" cy="12" r="1"/>
+                            <circle cx="15" cy="12" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 text-center">Namecheap</h3>
+                    <p class="text-xs text-gray-600 text-center">Check domain status</p>
+                </a>
+                
+                <!-- Sedo Link -->
+                <a href="https://sedo.com/search/?keyword=bostonfactory.com" 
+                   target="_blank"
+                   class="group flex flex-col items-center justify-center p-5 bg-gradient-to-br from-white to-gray-50 border border-gray-300 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-105 hover:border-green-500 animate-fade-in-up"
+                   style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-50 rounded-full mb-4 group-hover:bg-green-100 transition-colors duration-300">
+                        <!-- Sedo Icon -->
+                        <svg class="w-8 h-8 sedo-color" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/>
+                            <path d="M16.5 7.5h-9c-.828 0-1.5.672-1.5 1.5v6c0 .828.672 1.5 1.5 1.5h9c.828 0 1.5-.672 1.5-1.5V9c0-.828-.672-1.5-1.5-1.5zm-9 1.5h9v6h-9v-6z"/>
+                            <rect x="8" y="10" width="8" height="1"/>
+                            <rect x="8" y="12" width="8" height="1"/>
+                            <rect x="8" y="14" width="6" height="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 text-center">Sedo</h3>
+                    <p class="text-xs text-gray-600 text-center">Premium marketplace</p>
+                </a>
+                
+                <!-- Daaz Link -->
+                <a href="https://daaz.com/buy-domain-names?keyword=bostonfactory&like=contains&listing=yes&feature=&price=0;0&currency=0&length=1-256&category=&extension=&special=yes" 
+                   target="_blank"
+                   class="group flex flex-col items-center justify-center p-5 bg-gradient-to-br from-white to-gray-50 border border-gray-300 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 hover:scale-105 hover:border-blue-500 animate-fade-in-up"
+                   style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-50 rounded-full mb-4 group-hover:bg-blue-100 transition-colors duration-300">
+                        <!-- Daaz Icon -->
+                        <svg class="w-8 h-8 daaz-color" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.201 22.5 1.5 17.799 1.5 12S6.201 1.5 12 1.5 22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/>
+                            <path d="M16.5 9h-9c-.828 0-1.5.672-1.5 1.5v3c0 .828.672 1.5 1.5 1.5h9c.828 0 1.5-.672 1.5-1.5v-3c0-.828-.672-1.5-1.5-1.5zm-9 1.5h9v3h-9v-3z"/>
+                            <path d="M10.5 12c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5 1.5.672 1.5 1.5z"/>
+                            <path d="M16.5 12c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5 1.5.672 1.5 1.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2 text-center">Daaz</h3>
+                    <p class="text-xs text-gray-600 text-center">Domain marketplace</p>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -422,4 +525,3 @@
 
 </body>
 </html>
-
