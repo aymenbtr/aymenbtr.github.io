@@ -98,16 +98,23 @@
         }
         
         .logo-container {
-            width: 50%;
-            max-width: 600px;
+            width: 70%;
+            max-width: 800px;
             margin: 0 auto;
+        }
+        
+        /* Ensure the hero section has enough space */
+        .hero-section {
+            min-height: 100vh;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 overflow-x-hidden">
     
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden gradient-bg">
+    <section class="relative hero-section flex flex-col items-center justify-center overflow-hidden gradient-bg">
         <!-- Animated Background Elements -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute top-20 left-10 w-72 h-72 bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
@@ -115,40 +122,40 @@
             <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-slate-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 4s;"></div>
         </div>
         
-        <!-- Logo Image - Now properly centered and taking half the screen -->
-        <div class="relative z-20 w-1/2 max-w-2xl mb-12 animate-fade-in-scale">
+        <!-- Logo Image - Slightly smaller to make room for title -->
+        <div class="relative z-20 logo-container mb-6 animate-fade-in-scale">
             <img src="bostonfactory.png" alt="BostonFactory Logo" class="w-full h-auto">
         </div>
 
         <!-- Hero Content -->
-        <div class="relative z-20 text-center px-4 sm:px-6 lg:px-8">
+        <div class="relative z-20 text-center px-4 sm:px-6 lg:px-8 w-full">
             <!-- Premium Badge -->
-            <div class="inline-flex items-center gap-3 bg-gradient-to-r from-slate-800 to-slate-700 text-white px-6 py-2 rounded-full mb-8 shadow-lg transition-all duration-500 hover:scale-105 animate-float cursor-pointer">
+            <div class="inline-flex items-center gap-3 bg-gradient-to-r from-slate-800 to-slate-700 text-white px-6 py-2 rounded-full mb-6 shadow-lg transition-all duration-500 hover:scale-105 animate-float cursor-pointer">
                 <i class="fas fa-star text-yellow-400"></i>
                 <span class="text-xs font-bold tracking-widest">PREMIUM DOMAIN FOR SALE</span>
                 <i class="fas fa-star text-yellow-400"></i>
             </div>
             
-            <!-- Main Title -->
-            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-none animate-slide-in-left">
+            <!-- Main Title - Reduced font size to fit on screen -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 leading-tight animate-slide-in-left">
                 <span class="text-gradient">BostonFactory</span><span class="text-gray-900">.com</span>
             </h1>
             
-            <!-- Subtitle -->
-            <p class="text-xl sm:text-2xl md:text-3xl font-light text-gray-600 mb-12 max-w-4xl mx-auto animate-slide-in-right">
+            <!-- Subtitle - Smaller font size -->
+            <p class="text-lg sm:text-xl md:text-2xl font-light text-gray-600 mb-8 max-w-3xl mx-auto animate-slide-in-right">
                 The Perfect Domain for Your <span class="font-semibold text-gray-900">Boston-Based Business</span>
             </p>
             
             <!-- Price Display -->
-            <div class="inline-block bg-white/90 backdrop-blur-sm border-2 border-gray-300 px-10 sm:px-16 py-8 rounded-2xl mb-12 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 animate-fade-in-scale pulse-ring">
+            <div class="inline-block bg-white/90 backdrop-blur-sm border-2 border-gray-300 px-8 sm:px-12 py-6 rounded-2xl mb-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 animate-fade-in-scale pulse-ring">
                 <div class="text-sm text-gray-500 uppercase tracking-wider mb-2 font-semibold">Available Now For</div>
-                <div class="text-5xl sm:text-6xl md:text-7xl font-black text-gradient">$1,090</div>
+                <div class="text-4xl sm:text-5xl md:text-6xl font-black text-gradient">$1,090</div>
             </div>
 
             <!-- Primary CTA Button -->
-            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center mb-10 animate-fade-in-up" style="animation-delay: 0.2s;">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aymendidz@gmail.com&su=Offer for BostonFactory.com" 
-                   class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 overflow-hidden"
+                   class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 text-white px-8 py-3 rounded-full text-base font-bold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 overflow-hidden"
                    target="_blank">
                     <span class="absolute inset-0 w-0 bg-gradient-to-r from-blue-700 to-indigo-700 transition-all duration-500 ease-out group-hover:w-full"></span>
                     <i class="fas fa-envelope relative z-10"></i>
@@ -157,35 +164,35 @@
             </div>
 
             <!-- Contact Buttons -->
-            <div class="flex flex-wrap gap-4 justify-center mb-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+            <div class="flex flex-wrap gap-3 justify-center mb-6 animate-fade-in-up" style="animation-delay: 0.4s;">
                 <a href="https://wa.me/213697251047" 
-                   class="group inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm border border-gray-300 hover:border-green-500 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-500 hover:scale-105"
+                   class="group inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm border border-gray-300 hover:border-green-500 text-gray-900 px-5 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-500 hover:scale-105"
                    target="_blank">
-                    <i class="fab fa-whatsapp text-xl text-green-500 group-hover:scale-110 transition-transform duration-300"></i>
+                    <i class="fab fa-whatsapp text-lg text-green-500 group-hover:scale-110 transition-transform duration-300"></i>
                     <span>WhatsApp</span>
                 </a>
                 <a href="https://t.me/+213697251047" 
-                   class="group inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm border border-gray-300 hover:border-blue-500 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-500 hover:scale-105"
+                   class="group inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm border border-gray-300 hover:border-blue-500 text-gray-900 px-5 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-500 hover:scale-105"
                    target="_blank">
-                    <i class="fab fa-telegram text-xl text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
+                    <i class="fab fa-telegram text-lg text-blue-500 group-hover:scale-110 transition-transform duration-300"></i>
                     <span>Telegram</span>
                 </a>
             </div>
 
             <!-- Email Display -->
-            <div class="inline-block bg-gradient-to-r from-gray-100 to-gray-200 border border-gray-300 px-6 py-3 rounded-full text-base font-semibold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in-up" style="animation-delay: 0.6s;">
+            <div class="inline-block bg-gradient-to-r from-gray-100 to-gray-200 border border-gray-300 px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in-up" style="animation-delay: 0.6s;">
                 aymendidz@gmail.com
             </div>
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-slow cursor-pointer">
-            <i class="fas fa-chevron-down text-2xl text-gray-400 hover:text-gray-900 transition-colors duration-300"></i>
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce-slow cursor-pointer">
+            <i class="fas fa-chevron-down text-xl text-gray-400 hover:text-gray-900 transition-colors duration-300"></i>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="relative py-20 sm:py-28 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
+    <section class="relative py-16 sm:py-24 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-20">
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-50 via-transparent to-indigo-50"></div>
@@ -193,148 +200,148 @@
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Title -->
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-center mb-16 animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-12 animate-fade-in-up">
                 Why <span class="text-gradient">BostonFactory.com</span>?
             </h2>
             
             <!-- Features Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Feature Card 1 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-blue-300 animate-fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-city text-2xl text-blue-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-blue-300 animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-city text-xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Prime Location Brand</h3>
-                    <p class="text-gray-600 leading-relaxed">Boston is a global hub for innovation, technology, and manufacturing. This domain instantly connects your brand to one of America's most prestigious cities.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">Prime Location Brand</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Boston is a global hub for innovation, technology, and manufacturing. This domain instantly connects your brand to one of America's most prestigious cities.</p>
                 </div>
 
                 <!-- Feature Card 2 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-indigo-300 animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-briefcase text-2xl text-indigo-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-indigo-300 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-briefcase text-xl text-indigo-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Business Authority</h3>
-                    <p class="text-gray-600 leading-relaxed">Establish immediate credibility with a professional .com domain that signals trust and legitimacy to customers and partners worldwide.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">Business Authority</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Establish immediate credibility with a professional .com domain that signals trust and legitimacy to customers and partners worldwide.</p>
                 </div>
 
                 <!-- Feature Card 3 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-slate-400 animate-fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-rocket text-2xl text-slate-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-slate-400 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-rocket text-xl text-slate-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Versatile & Memorable</h3>
-                    <p class="text-gray-600 leading-relaxed">Perfect for manufacturing, co-working spaces, tech startups, creative studios, or any innovative business venture in the Boston area.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">Versatile & Memorable</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Perfect for manufacturing, co-working spaces, tech startups, creative studios, or any innovative business venture in the Boston area.</p>
                 </div>
 
                 <!-- Feature Card 4 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-green-300 animate-fade-in-up" style="animation-delay: 0.4s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-50 to-green-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-gem text-2xl text-green-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-green-300 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-50 to-green-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-gem text-xl text-green-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Premium Investment</h3>
-                    <p class="text-gray-600 leading-relaxed">Domain names are digital real estate. A strong, brandable .com domain is an asset that appreciates in value over time.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">Premium Investment</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Domain names are digital real estate. A strong, brandable .com domain is an asset that appreciates in value over time.</p>
                 </div>
 
                 <!-- Feature Card 5 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-yellow-300 animate-fade-in-up" style="animation-delay: 0.5s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-chart-line text-2xl text-yellow-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-yellow-300 animate-fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-chart-line text-xl text-yellow-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">SEO Advantage</h3>
-                    <p class="text-gray-600 leading-relaxed">Geographic and industry keywords in your domain boost search engine visibility, helping customers find you more easily.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">SEO Advantage</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Geographic and industry keywords in your domain boost search engine visibility, helping customers find you more easily.</p>
                 </div>
 
                 <!-- Feature Card 6 -->
-                <div class="group card-hover bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl border border-gray-200 hover:border-red-300 animate-fade-in-up" style="animation-delay: 0.6s;">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-50 to-red-100 rounded-xl mb-6 group-hover:scale-105 transition-all duration-500">
-                        <i class="fas fa-bolt text-2xl text-red-600"></i>
+                <div class="group card-hover bg-white rounded-xl p-6 shadow-lg hover:shadow-xl border border-gray-200 hover:border-red-300 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-lg mb-4 group-hover:scale-105 transition-all duration-500">
+                        <i class="fas fa-bolt text-xl text-red-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Instant Recognition</h3>
-                    <p class="text-gray-600 leading-relaxed">Easy to remember, spell, and share. Your customers will never forget BostonFactory.com - it's a name that sticks.</p>
+                    <h3 class="text-lg font-bold mb-3 text-gray-900">Instant Recognition</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Easy to remember, spell, and share. Your customers will never forget BostonFactory.com - it's a name that sticks.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section class="relative py-20 sm:py-28 bg-white overflow-hidden">
+    <section class="relative py-16 sm:py-24 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Title -->
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-center mb-16 animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-12 animate-fade-in-up">
                 The <span class="text-gradient">Boston</span> Advantage
             </h2>
             
             <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- Gallery Item 1 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-blue-400" style="animation-delay: 0.1s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-blue-400" style="animation-delay: 0.1s;">
                     <img src="https://images.unsplash.com/photo-1570219853966-c54c4d64d6e9?w=800&q=80" 
                          alt="Boston Skyline"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Iconic Skyline</h3>
-                        <p class="text-gray-200 text-sm">A city of innovation and opportunity</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Iconic Skyline</h3>
+                        <p class="text-gray-200 text-xs">A city of innovation and opportunity</p>
                     </div>
                 </div>
 
                 <!-- Gallery Item 2 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-indigo-400" style="animation-delay: 0.2s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-indigo-400" style="animation-delay: 0.2s;">
                     <img src="https://images.unsplash.com/photo-1570214476695-19bd2e296f6d?w=800&q=80" 
                          alt="Boston Streets"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Historic Streets</h3>
-                        <p class="text-gray-200 text-sm">Rich history meets modern business</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Historic Streets</h3>
+                        <p class="text-gray-200 text-xs">Rich history meets modern business</p>
                     </div>
                 </div>
 
                 <!-- Gallery Item 3 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-slate-400" style="animation-delay: 0.3s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-slate-400" style="animation-delay: 0.3s;">
                     <img src="https://images.unsplash.com/photo-1570219853966-c54c4d64d6e9?w=800&q=80" 
                          alt="Boston Architecture"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Architectural Beauty</h3>
-                        <p class="text-gray-200 text-sm">Blend of historic and contemporary design</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Architectural Beauty</h3>
+                        <p class="text-gray-200 text-xs">Blend of historic and contemporary design</p>
                     </div>
                 </div>
 
                 <!-- Gallery Item 4 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-green-400" style="animation-delay: 0.4s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-green-400" style="animation-delay: 0.4s;">
                     <img src="https://images.unsplash.com/photo-1570214476695-19bd2e296f6d?w=800&q=80" 
                          alt="Boston Business District"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Business Hub</h3>
-                        <p class="text-gray-200 text-sm">Thriving commercial center</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Business Hub</h3>
+                        <p class="text-gray-200 text-xs">Thriving commercial center</p>
                     </div>
                 </div>
 
                 <!-- Gallery Item 5 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-yellow-400" style="animation-delay: 0.5s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-yellow-400" style="animation-delay: 0.5s;">
                     <img src="https://images.unsplash.com/photo-1570219853966-c54c4d64d6e9?w=800&q=80" 
                          alt="Boston Innovation"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Innovation Center</h3>
-                        <p class="text-gray-200 text-sm">Home to world-class universities and tech</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Innovation Center</h3>
+                        <p class="text-gray-200 text-xs">Home to world-class universities and tech</p>
                     </div>
                 </div>
 
                 <!-- Gallery Item 6 -->
-                <div class="group relative h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-red-400" style="animation-delay: 0.6s;">
+                <div class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 animate-fade-in-scale border border-gray-200 hover:border-red-400" style="animation-delay: 0.6s;">
                     <img src="https://images.unsplash.com/photo-1570214476695-19bd2e296f6d?w=800&q=80" 
                          alt="Boston Culture"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90 group-hover:brightness-100">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 class="text-2xl font-bold text-white mb-2">Cultural Heritage</h3>
-                        <p class="text-gray-200 text-sm">Where tradition meets modern commerce</p>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 class="text-lg font-bold text-white mb-1">Cultural Heritage</h3>
+                        <p class="text-gray-200 text-xs">Where tradition meets modern commerce</p>
                     </div>
                 </div>
             </div>
@@ -342,7 +349,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="relative py-20 sm:py-28 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 overflow-hidden">
+    <section class="relative py-16 sm:py-24 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 overflow-hidden">
         <!-- Animated Background -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
@@ -351,63 +358,63 @@
         
         <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <!-- Section Title -->
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-8 leading-tight animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 leading-tight animate-fade-in-up">
                 Own This <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Premium Domain</span> Today
             </h2>
             
             <!-- Section Text -->
-            <p class="text-xl sm:text-2xl text-gray-300 mb-16 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s;">
+            <p class="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s;">
                 Don't miss this opportunity to secure a powerful, memorable domain for your business. BostonFactory.com is ready for immediate transfer.
             </p>
             
             <!-- Primary CTA -->
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aymendidz@gmail.com&su=Offer for BostonFactory.com" 
-               class="group relative inline-flex items-center gap-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-12 py-5 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 mb-12 overflow-hidden animate-fade-in-up"
+               class="group relative inline-flex items-center gap-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 mb-10 overflow-hidden animate-fade-in-up"
                style="animation-delay: 0.4s;"
                target="_blank">
                 <span class="absolute inset-0 w-0 bg-gradient-to-r from-indigo-600 to-blue-600 transition-all duration-500 ease-out group-hover:w-full"></span>
-                <i class="fas fa-envelope text-xl relative z-10"></i>
+                <i class="fas fa-envelope text-lg relative z-10"></i>
                 <span class="relative z-10">Make An Offer Now</span>
             </a>
 
             <!-- Contact Buttons -->
-            <div class="flex flex-wrap gap-6 justify-center animate-fade-in-up" style="animation-delay: 0.6s;">
+            <div class="flex flex-wrap gap-4 justify-center animate-fade-in-up" style="animation-delay: 0.6s;">
                 <a href="https://wa.me/213697251047" 
-                   class="group inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 hover:border-green-400 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
+                   class="group inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 hover:border-green-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
                    target="_blank">
-                    <i class="fab fa-whatsapp text-2xl text-green-400 group-hover:scale-110 transition-transform duration-300"></i>
-                    <span class="text-base">WhatsApp: +213 697 251 047</span>
+                    <i class="fab fa-whatsapp text-xl text-green-400 group-hover:scale-110 transition-transform duration-300"></i>
+                    <span class="text-sm">WhatsApp: +213 697 251 047</span>
                 </a>
                 <a href="https://t.me/+213697251047" 
-                   class="group inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 hover:border-blue-400 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
+                   class="group inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 hover:border-blue-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
                    target="_blank">
-                    <i class="fab fa-telegram text-2xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
-                    <span class="text-base">Telegram: +213 697 251 047</span>
+                    <i class="fab fa-telegram text-xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+                    <span class="text-sm">Telegram: +213 697 251 047</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-10 border-t border-gray-300">
+    <footer class="bg-gray-100 py-8 border-t border-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap items-center justify-center gap-8 mb-6 text-gray-600">
-                <div class="flex items-center gap-3 hover:text-gray-900 transition-colors duration-300">
-                    <i class="fas fa-shield-alt text-xl text-blue-600"></i>
-                    <span class="font-semibold">Secure domain transfer</span>
+            <div class="flex flex-wrap items-center justify-center gap-6 mb-4 text-gray-600">
+                <div class="flex items-center gap-2 hover:text-gray-900 transition-colors duration-300">
+                    <i class="fas fa-shield-alt text-lg text-blue-600"></i>
+                    <span class="font-semibold text-sm">Secure domain transfer</span>
                 </div>
                 <div class="hidden sm:block text-gray-400">•</div>
-                <div class="flex items-center gap-3 hover:text-gray-900 transition-colors duration-300">
-                    <i class="fas fa-clock text-xl text-green-600"></i>
-                    <span class="font-semibold">Fast escrow service available</span>
+                <div class="flex items-center gap-2 hover:text-gray-900 transition-colors duration-300">
+                    <i class="fas fa-clock text-lg text-green-600"></i>
+                    <span class="font-semibold text-sm">Fast escrow service available</span>
                 </div>
                 <div class="hidden sm:block text-gray-400">•</div>
-                <div class="flex items-center gap-3 hover:text-gray-900 transition-colors duration-300">
-                    <i class="fas fa-headset text-xl text-indigo-600"></i>
-                    <span class="font-semibold">Professional support</span>
+                <div class="flex items-center gap-2 hover:text-gray-900 transition-colors duration-300">
+                    <i class="fas fa-headset text-lg text-indigo-600"></i>
+                    <span class="font-semibold text-sm">Professional support</span>
                 </div>
             </div>
-            <p class="text-center text-gray-500 text-sm">
+            <p class="text-center text-gray-500 text-xs">
                 © 2025 BostonFactory.com • All Rights Reserved
             </p>
         </div>
